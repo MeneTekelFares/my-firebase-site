@@ -6,7 +6,9 @@
 </head>
 <body>
     <h1>Ура! Мой сайт подключен к базе данных!</h1>
-
+<input type="text" id="userName" placeholder="Ваше имя" style="display:block; margin:10px 0;">
+    <input type="email" id="userEmail" placeholder="Ваш Email" style="display:block; margin:10px 0;">
+    <button id="sendBtn" style="padding: 10px; background: green; color: white;">Отправить в Firebase</button>
     <script type="module">
         // Импортируем нужные функции Firebase
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
