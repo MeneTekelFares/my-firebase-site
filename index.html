@@ -1,1 +1,32 @@
-<h1>Привет, мой сайт работает!</h1>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой Firebase Проект</title>
+</head>
+<body>
+    <h1>Ура! Мой сайт подключен к базе данных!</h1>
+
+    <script type="module">
+        // Импортируем нужные функции Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+        // СЮДА ВСТАВЬТЕ ТО, ЧТО СКОПИРОВАЛИ ИЗ FIREBASE:
+        const firebaseConfig = {
+            apiKey: "ВАШ_API_KEY",
+            authDomain: "ВАШ_PROJECT_ID.firebaseapp.com",
+            projectId: "ВАШ_PROJECT_ID",
+            storageBucket: "ВАШ_PROJECT_ID.appspot.com",
+            messagingSenderId: "ВАШ_SENDER_ID",
+            appId: "ВАШ_APP_ID"
+        };
+
+        // Запуск Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        console.log("Firebase готов к работе!");
+    </script>
+</body>
+</html>
